@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/yald/Documents/Training/Spark_Structured_Streaming/target/scala-2.12/spark_structured_streaming_2.12-0.1.jar ...[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	Spark_Struct_Stream$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yald/Documents/Training/Spark_Structured_Streaming/target/scala-2.12/classes/Spark_Struct_Stream$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	Spark_StructStream.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yald/Documents/Training/Spark_Structured_Streaming/target/scala-2.12/classes/Spark_StructStream.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	Spark_StructStream$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yald/Documents/Training/Spark_Structured_Streaming/target/scala-2.12/classes/Spark_StructStream$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	Spark_Struct_Stream.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yald/Documents/Training/Spark_Structured_Streaming/target/scala-2.12/classes/Spark_Struct_Stream.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m[0J

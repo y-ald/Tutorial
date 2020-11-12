@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/yald/Documents/Training/Spark_Structured_Streaming/src/main/scala/Spark_Struct_Stream.scala:6:8: Spark_Struct_Stream has a main method with parameter type Array[String], but Spark_Struct_Stream will not be a runnable program.[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0m  Reason: main method must have exact signature (Array[String])Unit[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0mobject Spark_Struct_Stream {[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0m       ^[0m[0J
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m[0J
