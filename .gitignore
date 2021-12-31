@@ -1,1 +1,7 @@
-park_streaming/target/*
+spark_streaming/target/*
+spark_streaming/target/*
+Spark_Structured_Streaming/.bsp
+.idea/*
+.bsp/*
+Spark_Structured_Streaming/project/target/*
+Spark_Structured_Streaming/target/*

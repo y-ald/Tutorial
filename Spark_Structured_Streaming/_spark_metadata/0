@@ -1,0 +1,3 @@
+v1
+{"path":"file:///home/yald/Documents/Training/Tutorial/Spark_Structured_Streaming/part-00000-0d8a7266-97ee-471f-94ba-df450f2f7a41-c000.snappy.parquet","size":2513,"isDir":false,"modificationTime":1605826759000,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/yald/Documents/Training/Tutorial/Spark_Structured_Streaming/part-00001-ed1a30f4-b70c-4a08-8b9a-7318f083d0da-c000.snappy.parquet","size":774,"isDir":false,"modificationTime":1605826759000,"blockReplication":1,"blockSize":33554432,"action":"add"}

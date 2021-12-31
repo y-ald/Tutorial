@@ -22,7 +22,7 @@ import org.apache.spark.streaming.Seconds
 import org.apache.spark.sql.SparkSession
 import org.apache.kafka.clients.producer.ProducerRecord
 
-object KafkaStreaming {
+object Kafka_Spark_Streaming {
 
   def main(args:Array[String]){
 
@@ -65,8 +65,7 @@ object KafkaStreaming {
     val numberCounts1 = wordCounts1.filter(y => y._1.matches("\\d+")).reduceByKey(_ + _)
     val joinedVowelStream = vowelcounts.join(vowelcounts1)
     val joinedConsonantStream = consonantCounts.join(consonantCounts1)
-    val joinedNumberStream = numberCounts.join(numberCounts1)
-    println("Vowel stream =======================")
+-v
     wordCounts1.print()
     joinedVowelStream.print()
     println("Consonant stream =======================")
