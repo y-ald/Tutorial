@@ -1,0 +1,123 @@
+Kubenetes =  container orchestration tool made by Google
+
+===========================================
+Container concetpss 
+==============================================
+
+
+whats is Docker 
+----------------
+
+=> What is a container 
+container is a way to package and application with ..everything we need(configuratuon and environment)
+protable artifact easily shared and moved around, development and deployment easier
+
+=> where do container live
+in container repository (public vs private)
+public: docker container
+
+=> how container improve development concept
+- any service not installed on you systemd directly, it is in isolated environment, run app of différent version
+- dowload step only one command
+
+=> containe improve the depoyment concept
+- configure evrything depending of the need on the server
+- Developer and operations work together to package the applicaiton in a container
+One time effort 
+
+
+Container Architecture
+----------------------
+
+=> Layer of linux base image (alpine:3.10), application image with configuration(postgres;10:10)
+
+
+Docker Basic command
+--------------------
+
+=> container vs image
+Container is running environment for image
+docker pull : download the image
+docker run image: start the image in the container (-option -d detach mode, -p specify the binding port, --name specify the image name)
+docker ps: state of all the running container (option -a all container running or not running 
+docker stop idContainer: stop docker container
+docker run idContainer: start
+docker images: give all the image we have localy
+docker 
+docker
+docker
+
+
+Contianer port vs Host port:
+
+
+Debugging Docker containers with docker exec and docker logs
+------------------------------------------------------------
+
+docker logs containerId / container name: container
+docker exec -it containerId/ContainerName /bin/bash
+
+Docker Vs Vitual machine
+------------------------
+=> docker image
+docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo    
+
+=> docker express 
+docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password -e ME_CONFIG_MONGODB_PORT=27017 --net mongo-network --name mongo-express -e ME_CONFIG_MONGODB_SERVER=mongodb mongo-express 
+
+
+Dockerfile 
+----------
+is a blueprint to create docker image
+- copy artifact 
+- 
+ex;
+
+FROM node (image) => which run node install node so that the command node is avialve
+ENV MONGO_DB_USERNAME=admin \
+    MONGO_DB_PWD=password 
+RUN mkdir -p /home/app
+COPY . /home/app (copy file from the host
+CMD ["node", "server.js"]: just one and it is entry point 
+
+build docker image from dockerfile: docker build -t my-app:1.0 .
+Connect to bash or shell : docker exec -it 4243412 /bin/bash(sh)
+
+
+Docker Compose 
+---------------
+with docker compose. take all command and structure it in a file 
+
+version: '3'
+services:
+mongodb:
+	image:mongo
+	ports:
+	- 2020:2020
+	environment:
+	- ME_CONFIG:
+
+Docker compose create common network for those image
+start container using docker compose file: docker-compose -f mongo.yaml up
+
+Create private repositry
+------------------------
+docker login for authentification
+=> Naming in registry : registryDomain/imageName:Tag
+for image in dockerhub: docker pull mongo:4.2 <=> docker.io/library/mongo:4.2
+docker tag (renaming the image with push it to private repositry)
+docker push
+
+Deploy an application on applicaiton server which in and image
+--------------------------------------------------------------
+
+
+Docker-volumes
+---------------
+
+volumes:
+  mongo-data:
+	driver: local
+
+
+	
